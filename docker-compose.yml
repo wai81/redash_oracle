@@ -1,0 +1,23 @@
+redash:
+  image: redash_oracle/oracle
+  ports:
+    - "5000:5000"
+  links:
+    - redis
+    - postgres
+  environment:
+    REDASH_WEB_WORKERS: 4
+redis:
+  image: redis:5.0-alpine
+postgres:
+  image: postgres:9.5-alpine
+  ports:
+    - "5432:5432"
+  volumes:
+   - /opt/redash/postgres-data:/var/lib/postgresql/data
+redash-nginx:
+  image: redash/nginx:latest
+  ports:
+    - "80:80"
+  links:
+    - redash
