@@ -1,6 +1,7 @@
 # Инструкция по установке Redash c поддержкой Oracle
 ### 1. Клонировать текущий репозитрий
 ```bash
+$ git clone https://github.com/wai81/redash_oracle
 ```
 ### 2. Скачать Redash v7.0.0
 ```bash
@@ -16,7 +17,7 @@ instantclient-*.zip
 ```bash
 $ mv /redash_oracle/oracle/instantclient-*.zip oracle/
 ```
-Для поддежки кирилтци в запрсах необходимо изменить/добавить кодировку оболочки
+Для поддежки кирилици в запрсах необходимо изменить/добавить кодировку оболочки
 проветь какя кодировка командой
 ```bash
 $ echo $LANG
