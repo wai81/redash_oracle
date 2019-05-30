@@ -13,10 +13,8 @@ $ unzip v7.0.0.zip && cd ./redahs
 $ mkdir oracle
 ```
 ### 4 Скопировать файлы клиента ORACLE
-instantclient-*.zip
-```bash
-$ mv /redash_oracle/oracle/instantclient-*.zip oracle/
-```
+Скопируйте из /redash_oracle/oracle/instantclient-*.zip в папку /redash/oracle/
+
 Для поддежки кирилици в запрсах необходимо изменить/добавить кодировку оболочки
 проветь какя кодировка командой
 ```bash
