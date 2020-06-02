@@ -40,7 +40,7 @@ $ export LANG=ru_RU.utf8
 #/redash_oracle/
 $ docker stop $(docker ps -a -q)
 ```
-или только котенеры Redash
+или только контейнеры Redash
 ```bash
 $ docker-compose stop server scheduler scheduled_worker adhoc_worker
 ```
