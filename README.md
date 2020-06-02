@@ -44,7 +44,7 @@ $ docker stop $(docker ps -a -q)
 ```bash
 $ docker-compose stop server scheduler scheduled_worker adhoc_worker
 ```
-### 7 Развернуть контейнер
+### 4 Развернуть контейнер
 Скопируйте из /redash_oracle/docker-compose.yml в /opt/redash перед развертыванием или обновите файл https://github.com/getredash/setup
 
 Для новой установки Redash выполните команды:
